@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cosmos Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Space</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Main</a></li>
+      <li><a href="#">Galaxies</a></li>
+      <li><a href="#">Planets</a></li>
+      <li><a href="#">Missions</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="jumbotron text-center space-header">
+  <h1>Space inc</h1>
+  <p>discover Universe with us</p>
+  <a href="#" class="btn btn-primary btn-lg">Begin journey</a>
+</header>
+
+<div class="container">
+  <h2 class="page-title text-center">Our themes</h2>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel custom-panel equal-panel">
+        <div class="panel-heading">Galaxies</div>
+        <div class="panel-body">
+          <img src="./images/galaxy1.jpg" class="img-responsive img-rounded fixed-img">
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-custom">More...</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel custom-panel equal-panel">
+        <div class="panel-heading">Planets</div>
+        <div class="panel-body">
+          <img src="./images/mars.jpg" class="img-responsive img-rounded fixed-img">
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-custom">More...</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel custom-panel equal-panel">
+        <div class="panel-heading">Space missions</div>
+        <div class="panel-body">
+          <img src="./images/rocket.jpg" class="img-responsive img-rounded fixed-img">
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-custom" id="missionBtn">More...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center mission-title">Mission progress Mars2030</h2>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active progress-70"
+      role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+      70% Done
+    </div>
+  </div>
+</div>
+
+<footer class="footer text-center">
+  <p>Cosmos © 2025 | To the stars and above</p>
+</footer>
+
+<script>
+  document.getElementById("missionBtn").addEventListener("click", function() {
+    alert("лечу на органи");
+  });
+</script>
+
+</body>
+</html>
